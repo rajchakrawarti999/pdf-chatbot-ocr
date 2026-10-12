@@ -1,0 +1,19 @@
+# secrets
+.env
+
+# python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# local data created by the app
+chroma_db/
+uploads/
+
+# pdfs (personal documents and copyrighted books)
+*.pdf
+
+# editor / os
+.vscode/
+.DS_Store

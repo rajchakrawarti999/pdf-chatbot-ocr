@@ -1,0 +1,8 @@
+easyocr
+opencv-python
+pymupdf
+numpy
+chromadb
+sentence-transformers
+google-genai
+streamlit
