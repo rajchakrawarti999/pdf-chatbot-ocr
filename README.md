@@ -1,4 +1,4 @@
-# Chat With Your Notes (OCR + RAG)
+# PDF Chatbot with OCR
 
 I was learning about OCR and wanted to build something real with it instead of just running Tesseract on a random image. This is what I ended up with: you upload your notes (a photo or a PDF), and then you can chat with them. The app answers from your own notes and shows which file and which page the answer came from.
 
@@ -56,7 +56,7 @@ Other things I changed along the way:
 - PyMuPDF for reading PDFs
 - sentence-transformers (paraphrase-multilingual-MiniLM-L12-v2) for embeddings
 - ChromaDB as the local vector database
-- Gemini API for the LLM
+- Gemini API (a Gemini 3.5 model) for the LLM
 - Streamlit for the UI
 
 Only the LLM needs an API key and internet. OCR, embeddings and the database all run on the laptop.
@@ -79,8 +79,8 @@ Requirements.txt  dependencies
 1. Clone the repo and go into the folder.
 
 ```
-git clone https://github.com/rajchakrawarti999/ocr-rag-notes-chat.git
-cd ocr-rag-notes-chat
+git clone https://github.com/rajchakrawarti999/pdf-chatbot-ocr.git
+cd pdf-chatbot-ocr
 ```
 
 2. Create a virtual environment and install the packages (tested on Python 3.12).
